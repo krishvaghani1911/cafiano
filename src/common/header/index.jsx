@@ -17,6 +17,7 @@ export default function Header() {
                 <Link to={'/store'} href="">Store</Link>
             </div>
             <div className='search'>
+                567
                 <input type="text" placeholder='Search here'/>
             </div>
         </div>
