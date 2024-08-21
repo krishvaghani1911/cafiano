@@ -1,0 +1,91 @@
+.cards {
+    position: relative;
+    color: rgb(14, 56, 44);
+    background-color: rgb(237, 235, 233);
+    margin-bottom: 50px;
+
+    .img {
+        right: 0;
+        top: 0;
+        width: 80px;
+        position: absolute;
+        display: block;
+    }
+
+    .container {
+        padding: 50px 100px;
+
+        h5 {
+            font-weight: 550;
+            font-size: 25px;
+        }
+
+        .card-item {
+            margin-top: 40px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+
+            .item {
+                border: 1.5px solid rgb(165, 165, 165);
+                padding: 15px 25px;
+                min-width: 290px;
+                border-radius: 7.5px;
+                background-color: white;
+
+                .item-detail {
+                    gap: 18px;
+                    display: flex;
+
+                    img {
+                        object-fit: cover;
+                        width: 75px;
+                        display: block;
+                        height: 75px;
+                        border-radius: 5px;
+                    }
+
+                    .veg-mark {
+                        img {
+                            display: block;
+                            border-radius: 0;
+                            height: 20px;
+                            width: 20px;
+                        }
+
+                        .p1 {
+                            font-weight: 600;
+                            font-size: 15px;
+                        }
+
+                        .p2 {
+                            font-weight: 600;
+                            color: gray;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .prise {
+                    justify-content: space-between;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+
+                    button {
+                        background-color: rgb(45, 101, 85);
+                        color: white;
+                        font-weight: 500;
+                        padding: 7.5px 15px;
+                        border: none;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

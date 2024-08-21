@@ -1,0 +1,20 @@
+.learn{
+    background-color: rgb(14, 56, 44);
+    .container{
+        padding: 25px 100px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(14, 56, 44);
+        h2{
+            font-weight: 200;
+            color: white;
+        }
+        button{
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: 1.5px solid white;
+            background-color: transparent;
+        }
+    }
+}

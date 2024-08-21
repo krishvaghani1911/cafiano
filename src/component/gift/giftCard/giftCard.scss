@@ -1,0 +1,67 @@
+.giftcard{
+    margin-bottom: 50px;
+    .container{
+        .h2{
+            border-bottom: 2px solid rgb(196, 196, 196);
+            padding: 10px 75px;
+            font-weight: 500;
+            font-size: 25px;
+        }
+        .congratulations{
+            padding: 25px 45px 85px !important;
+        }
+        .anytime{
+            display: flex;
+            align-items: center;
+            padding: 25px 45px 100px;
+            gap: 250px;
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .anytime-card{
+                gap: 18px;
+                position: relative;
+                display: flex;
+                
+
+                img{
+                    z-index: 12;
+                    height: 90px;
+                    display: block;
+                    width: 150px;
+                    margin-top: 20px;
+                    border-radius: 10px;
+                }
+                .cont{
+                    border-radius: 15px;
+                    left: 50px;
+                    top: 0;
+                    padding: 20px 20px 20px 120px;
+                    position: absolute;
+                    width: 175px;
+                    border: 2px solid gray;
+                    display: flex;
+                    background-color: #f9f9f9;
+                    flex-direction: column;
+                    gap: 10px;
+                    h2{
+                        font-size: 15px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                    button{
+                        margin-top: 20px;
+                        max-width: max-content;
+                        padding: 8.5px 18px;
+                        border-radius: 30px;
+                        border: none;
+                        color: white;
+                        background-color: #00754a;
+                    }
+                }
+            }
+        }
+    }
+}

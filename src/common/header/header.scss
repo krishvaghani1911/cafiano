@@ -1,0 +1,57 @@
+.header{
+    border-bottom: 3px solid rgb(128, 128, 128);
+    padding: 10px 75px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 111;
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            width: 50px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .search{
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            padding: 7px 20px;
+            // border: 2px solid rgb(100, 100, 100);
+            box-shadow: 0px 0px 10px 0px gray;
+            input{
+                outline: none;
+                border: none;
+                font-size: 17px;
+            }
+        }
+        .nav{
+            display: flex;
+            gap: 40px;
+            a{
+                font-size: 20px;
+                display: block;
+                color: rgb(69, 69, 69);
+                text-decoration: none;
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 0%;
+                    height: 2px;
+                    transition: .3s;
+                    background-color: rgba(0, 0, 0, 0.6);
+                }
+                &:hover{
+                    &:after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
